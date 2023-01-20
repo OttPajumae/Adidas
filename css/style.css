@@ -176,6 +176,7 @@ small, .text_small {font-size: 0.8rem;}
     position: absolute;
     right: 10%;
     bottom: 10%;
+    text-align: right;
   }
   .hero-copy h4{
     margin-bottom: 0;
