@@ -1,0 +1,201 @@
+/*RESET*/
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    3. Allow percentage-based heights in the application
+  */
+  html, body {
+    height: 100%;
+  }
+  /*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    6. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    7. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    8. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+  /*END OF RESET*/
+
+  /*TYPO*/
+  @font-face{
+    font-family: grizzly;
+    src: url(/font/grizzly_attack/Grizzly\ Attack\ -\ PERSONAL\ USE.ttf);
+  }
+  .big-text{
+    font-family: grizzly;
+    font-size: 13em;
+    mix-blend-mode: difference;
+    filter: invert(1);
+  }
+  html {font-size: 100%;} /*16px*/
+
+body {
+    background: #f3f3f5;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 1.75;
+    color: #000000;
+    background-image:  linear-gradient(30deg, #3b1311 12%, transparent 12.5%, transparent 87%, #3b1311 87.5%, #3b1311), linear-gradient(150deg, #3b1311 12%, transparent 12.5%, transparent 87%, #3b1311 87.5%, #3b1311), linear-gradient(30deg, #3b1311 12%, transparent 12.5%, transparent 87%, #3b1311 87.5%, #3b1311), linear-gradient(150deg, #3b1311 12%, transparent 12.5%, transparent 87%, #3b1311 87.5%, #3b1311), linear-gradient(60deg, #3b131177 25%, transparent 25.5%, transparent 75%, #3b131177 75%, #3b131177), linear-gradient(60deg, #3b131177 25%, transparent 25.5%, transparent 75%, #3b131177 75%, #3b131177);
+    background-size: 80px 140px;
+    background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+}
+
+p {margin-bottom: 1rem;}
+
+h1, h2, h3, h4, h5 {
+  margin: 3rem 0 1.38rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.052rem;
+}
+
+h2 {font-size: 2.441rem;}
+
+h3 {font-size: 1.953rem;}
+
+h4 {font-size: 1.563rem;}
+
+h5 {font-size: 1.25rem;}
+
+small, .text_small {font-size: 0.8rem;}
+  /*END TYPO*/
+  /*GLOBAL*/
+  .d-flex{
+    display: flex;
+  }
+  .space-between{
+    justify-content: space-between;
+  }
+  .h-center{
+    align-items: center;
+  }
+  section, header{
+    background-color: #f3f3f5;
+  }
+.wrapper{
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding:3em;
+}
+.active{
+    color: rgb(214, 221, 173);
+}
+#link{
+    border-left: 2px solid gray;
+    margin:  0 1em;
+    height: 40px;
+}
+.btn{
+    padding: 8px 16px;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+
+  /*END GLOBAL*/
+  /*MAIN*/
+  header{
+    border-radius: 30px 30px 0 0;
+    margin: 4em auto 0;
+    width: 90%;
+    max-width: 1400px;
+    padding: 3em;
+}
+  .logo{
+    width: 4em;
+  }
+  .nav-icon{
+    width: 1em;
+  }
+  .user-id{
+    clip-path: circle(50%);
+    width: 50px;
+    height: 50px;
+  }
+  .hero{
+    position: relative;
+  }
+  nav a{
+    margin: 0 0.8em;
+    color: rgb(173, 173, 173);
+  }
+  .hero img{
+    margin: auto;
+    width: 500px;
+  }
+  .hero .big-text{
+    position: absolute;
+    top: 50%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+  }
+  .hero-copy{
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+  }
+  .hero-copy h4{
+    margin-bottom: 0;
+    font-weight: 600;
+  }
+
+  .btn-primary{
+    background-color: tomato;
+    color: white;
+    border-radius: 30px;
+    padding: 16px 32px;
+} 
+.color-picker h5{
+    margin: 0;
+}
+.color-picker input{
+    height: 2em;
+    width: 2em;
+    border-radius: 50%;
+    margin: 0 0 1.5em 0.5em;
+    border:none;
+}
+  /*END MAIN*/
