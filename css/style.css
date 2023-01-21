@@ -289,6 +289,29 @@ small, .text_small {font-size: 0.8rem;}
   margin-right: 10px;
   color: gray;
 }
+.product{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: end;
+}
+.productgrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  }
+  
+.productimg{
+  position: absolute;
+  margin-right: 3em;
+  width: 40%;
+  z-index: 0;
+}
+
+
 
   /*END MAIN*/
 
