@@ -121,7 +121,7 @@ small, .text_small {font-size: 0.8rem;}
     padding:3em;
 }
 .active{
-    color: rgb(214, 221, 173);
+    color: #000000;
 }
 #link{
     border-left: 2px solid gray;
@@ -199,4 +199,125 @@ small, .text_small {font-size: 0.8rem;}
     margin: 0 0 1.5em 0.5em;
     border:none;
 }
+#header{
+  margin-top: 0;
+}
+.shop{
+  padding: 4em 0 0 0;
+  background: linear-gradient(rgba(0,0,0,1.6), rgba(0, 0, 0, 0.5)),url(/assets/Sstore.jpg);
+
+}
+.searchBar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 3em;
+  
+}
+
+#searchQueryInput {
+  width: 100%;
+  height: 2.8rem;
+  background: black;
+  outline: none;
+  border: none;
+  border-radius: 1.625rem;
+  padding: 0 3.5rem 0 1.5rem;
+  font-size: 1rem;
+  border: 1px solid white;
+}
+::-webkit-input-placeholder{
+  color: white;
+}
+
+#searchQuerySubmit {
+  width: 3.5rem;
+  height: 2.8rem;
+  margin-left: -3.5rem;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+#searchQuerySubmit:hover {
+  cursor: pointer;
+}
+.shopper {
+  display: grid;
+  grid-template-columns:1fr 2fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  }
+  .sidebar{
+    flex-direction: column;
+  }
+  .sidebar a{
+    color: rgb(182, 182, 182);
+    text-decoration: none;
+    margin: 30px;
+    font-size: 1em;
+    transition: 0.5s;
+  }
+  .sidebar .loaded{
+    color: white;
+    letter-spacing: 12px;
+  }
+  .sidebar a:hover{
+    text-decoration: none;
+    color: white;
+  }
+ .shopgrid{
+  background-color: #f3f3f5;
+  border-radius: 4px;
+ }
+ .shopgrid-header{
+  margin-top: 10px;
+ }
+ a{
+  text-decoration: none;
+ }
+ .black{
+  color: #000000;
+  margin-left: 1em;
+ }
+ .gray:nth-child(1){
+  margin-right: 10px;
+ }
+ .gray{
+  margin-right: 10px;
+  color: gray;
+}
+
   /*END MAIN*/
+
+  /*RESPONSIVE */
+  @media only screen and (max-width: 600px){
+    .wrapper{
+      padding: 1em;
+    }
+    header{
+      margin: 1em auto 0 ;
+      padding: 1em;
+    }
+    /*.hero{
+      height: 100%;
+    }*/
+    .sec-nav{
+      display: none;
+    }
+    .big-text{
+      font-size: 3em;
+    }
+    .hero-copy{
+      position: relative;
+    }
+    .btn-primary{
+      padding: 4px 10px;
+    }
+    .color-picker{
+      
+    }
+  }
+  /*END RESPONSIVE */
